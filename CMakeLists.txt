@@ -12,6 +12,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(g2d1_lib
     src/g2d1.cpp
+    src/stdlogger.cpp
 )
 
 add_library(g2d1::g2d1 ALIAS g2d1_lib)

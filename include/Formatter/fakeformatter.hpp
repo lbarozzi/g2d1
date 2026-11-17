@@ -1,5 +1,5 @@
 #pragma once
-#include "Interfaces/IFormatter.hpp"
+#include "Interfaces/iformatter.hpp"
 #include <string_view>
 #include <string>
 
