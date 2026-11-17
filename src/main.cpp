@@ -4,8 +4,8 @@
 #include <format>
 #include <string>
 #include "g2d1/g2d1.hpp"
-#include "fakeformatter.hpp"
-#include "logformatter.hpp"
+#include "Formatter/fakeformatter.hpp"
+#include "Formatter/logformatter.hpp"
 #include "stdlogger.hpp"
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
     std::string tmp_text;
     std::cin >> tmp_text;
     
-    std::unique_ptr<fmt::IFormatter> formatter = std::make_unique<fmt::FakeFormatter>();
+    fmt::FakeFormatter fake;
 
-    std::cout << formatter->format(tmp_text) << '\n';
+    std::cout << fake.format(tmp_text) << '\n';
 }
