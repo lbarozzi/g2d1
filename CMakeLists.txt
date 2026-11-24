@@ -14,6 +14,9 @@ add_library(g2d1_lib
     src/g2d1.cpp
     src/stdlogger.cpp
     src/logformatter.cpp
+    include/iodevice/fifodevice.hpp
+    src/fifodevice.cpp
+    src/jprotocol.cpp
 )
 
 add_library(g2d1::g2d1 ALIAS g2d1_lib)
